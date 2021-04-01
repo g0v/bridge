@@ -1,2 +1,2 @@
 
-Join #bridge on join.g0v.tw
+Join #bridge on [join.g0v.tw](https://join.g0v.tw/)
