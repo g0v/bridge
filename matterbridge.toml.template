@@ -1,0 +1,69 @@
+[slack]
+	[slack.g0v-tw]
+	Token="[% SLACK_G0V_TW_TOKEN %]"
+	RemoteNickFormat="{BRIDGE} - @{NICK}: "
+
+	[slack.code-for-korea]
+	Token="[% SLACK_CODE_FOR_KOREA_TOKEN %]"
+	RemoteNickFormat="{BRIDGE} - @{NICK}: "
+
+[mattermost]
+	[mattermost.g0v-xyz]
+	Server="chat.g0v.xyz:443"
+	Team="everyone"
+	Token="[% MATTERMOST_G0V_XYZ_TOKEN %]"
+	RemoteNickFormat="{BRIDGE} - @{NICK}: "
+	PrefixMessagesWithNick=true
+
+[[gateway]]
+	name="herstory"
+	enable=true
+
+	[[gateway.inout]]
+	account="slack.g0v-tw"
+	channel="herstory"
+
+	[[gateway.inout]]
+	account="mattermost.g0v-xyz"
+	channel="herstory"
+
+
+[[gateway]]
+	name="facing-the-ocean"
+	enable=true
+
+	[[gateway.inout]]
+	account="mattermost.g0v-xyz"
+	channel="facing-the-ocean"
+
+	[[gateway.inout]]
+	account="slack.code-for-korea"
+	channel="facing-the-ocean"
+
+	[[gateway.inout]]
+	account="slack.g0v-tw"
+	channel="facing-the-ocean"
+
+[[gateway]]
+	name="g0v-intl"
+	enable=true
+
+	[[gateway.inout]]
+	account="mattermost.g0v-xyz"
+	channel="intl"
+
+	[[gateway.inout]]
+	account="slack.g0v-tw"
+	channel="intl"
+
+[[gateway]]
+	name="bridge"
+	enable=true
+
+	[[gateway.inout]]
+	account="mattermost.g0v-xyz"
+	channel="bridge"
+
+	[[gateway.inout]]
+	account="slack.g0v-tw"
+	channel="bridge"
