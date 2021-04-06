@@ -7,6 +7,10 @@
 	Token="[% SLACK_CODE_FOR_KOREA_TOKEN %]"
 	RemoteNickFormat="{BRIDGE} - @{NICK}: "
 
+	[slack.code-for-japan]
+	Token="[% SLACK_CODE_FOR_JAPAN_TOKEN %]"
+	RemoteNickFormat="{BRIDGE} - @{NICK}: "
+
 [mattermost]
 	[mattermost.g0v-xyz]
 	Server="chat.g0v.xyz:443"
@@ -39,6 +43,10 @@
 	[[gateway.inout]]
 	account="slack.code-for-korea"
 	channel="facing-the-ocean"
+
+	[[gateway.inout]]
+	account="slack.code-for-japan"
+	channel="overseas-facing_the_ocean"
 
 	[[gateway.inout]]
 	account="slack.g0v-tw"
