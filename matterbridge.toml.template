@@ -25,6 +25,7 @@
 	Server="1060178086714421288"
 	RemoteNickFormat="[{BRIDGE}] @{NICK}"
 	PreserveThreading=true
+	AutoWebhooks=true
 
 [[gateway]]
 	name="herstory"
