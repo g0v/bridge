@@ -19,6 +19,14 @@
 	RemoteNickFormat="[{BRIDGE}] @{NICK}"
 	PrefixMessagesWithNick=true
 
+[discord]
+	[discord.cofacts]
+	Token="[% DISCORD_COFACTS_TOKEN %]"
+	Server="1060178086714421288"
+	RemoteNickFormat="[{BRIDGE}] @{NICK}"
+	PreserveThreading=true
+	AutoWebhooks=true
+
 [[gateway]]
 	name="herstory"
 	enable=true
@@ -26,7 +34,6 @@
 	[[gateway.inout]]
 	account="slack.g0v-tw"
 	channel="herstory"
-
 
 [[gateway]]
 	name="facing-the-ocean"
@@ -59,3 +66,15 @@
 	[[gateway.inout]]
 	account="slack.g0v-tw"
 	channel="bridge"
+
+[[gateway]]
+	name="cofacts"
+	enable=true
+	
+	[[gateway.inout]]
+	account="slack.g0v-tw"
+	channel="cofacts"
+
+	[[gateway.inout]]
+	account="discord.cofacts"
+	channel="general"
