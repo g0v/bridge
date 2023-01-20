@@ -2,6 +2,7 @@
 	[slack.g0v-tw]
 	Token="[% SLACK_G0V_TW_TOKEN %]"
 	RemoteNickFormat="[{BRIDGE}] @{NICK}"
+	PreserveThreading=true
 
 	[slack.code-for-korea]
 	Token="[% SLACK_CODE_FOR_KOREA_TOKEN %]"
