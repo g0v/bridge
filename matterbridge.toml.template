@@ -4,6 +4,10 @@
 	RemoteNickFormat="[{BRIDGE}] @{NICK}"
 	PreserveThreading=true
 
+	[slack.daodaoedu]
+	Token="[% SLACK_DAODAOEDU_TOKEN %]"
+	RemoteNickFormat="[{BRIDGE}] @{NICK}"
+
 	[slack.code-for-korea]
 	Token="[% SLACK_CODE_FOR_KOREA_TOKEN %]"
 	RemoteNickFormat="[{BRIDGE}] @{NICK}"
@@ -79,3 +83,15 @@
 	[[gateway.inout]]
 	account="discord.cofacts"
 	channel="general"
+
+[[gateway]]
+	name="daodaoedu"
+	enable=true
+	
+	[[gateway.inout]]
+	account="slack.g0v-tw"
+	channel="edu-daodao"
+
+	[[gateway.inout]]
+	account="slack.daodaoedu"
+	channel="主頻道-大會報告島"
