@@ -39,6 +39,12 @@
 	PreserveThreading=true
 	AutoWebhooks=true
 
+	[discord.unicourse]
+	Token="[% DISCORD_UNICOURSE_TOKEN %]"
+	Server="931555417841078312"
+	RemoteNickFormat="[{BRIDGE}] @{NICK}"
+	PreserveThreading=true
+	AutoWebhooks=true
 
 [[gateway]]
 	name="herstory"
@@ -115,3 +121,15 @@
 	[[gateway.inout]]
 	account="discord.sch001"
 	channel="零時小學校交誼廳"
+
+[[gateway]]
+	name="unicourse"
+	enable=true
+	
+	[[gateway.inout]]
+	account="slack.g0v-tw"
+	channel="edu-unicourse"
+
+	[[gateway.inout]]
+	account="slack.unicourse"
+	channel="閒聊"
