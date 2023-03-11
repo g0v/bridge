@@ -31,7 +31,7 @@
 	RemoteNickFormat="[{BRIDGE}] @{NICK}"
 	PreserveThreading=true
 	AutoWebhooks=true
-	
+
 	[discord.sch001]
 	Token="[% DISCORD_SCH001_TOKEN %]"
 	Server="1075749153512108102"
@@ -89,7 +89,7 @@
 [[gateway]]
 	name="cofacts"
 	enable=true
-	
+
 	[[gateway.inout]]
 	account="slack.g0v-tw"
 	channel="cofacts"
@@ -101,7 +101,7 @@
 [[gateway]]
 	name="daodaoedu"
 	enable=true
-	
+
 	[[gateway.inout]]
 	account="slack.g0v-tw"
 	channel="edu-daodao"
@@ -113,7 +113,7 @@
 [[gateway]]
 	name="sch001"
 	enable=true
-	
+
 	[[gateway.inout]]
 	account="slack.g0v-tw"
 	channel="edu"
@@ -125,11 +125,11 @@
 [[gateway]]
 	name="unicourse"
 	enable=true
-	
+
 	[[gateway.inout]]
 	account="slack.g0v-tw"
 	channel="edu-unicourse"
 
 	[[gateway.inout]]
-	account="slack.unicourse"
+	account="discord.unicourse"
 	channel="閒聊"
