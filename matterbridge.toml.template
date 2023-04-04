@@ -133,3 +133,15 @@
 	[[gateway.inout]]
 	account="discord.unicourse"
 	channel="閒聊"
+	
+[[gateway]]
+	name="unicourse-openedu-coscup-2023"
+	enable=true
+
+	[[gateway.inout]]
+	account="slack.g0v-tw"
+	channel="edu-open-coscup-2023"
+
+	[[gateway.inout]]
+	account="discord.unicourse"
+	channel="edu-open-coscup-2023"
