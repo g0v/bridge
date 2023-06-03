@@ -166,4 +166,4 @@
 
 	[[gateway.inout]]
 	account="telegram.g0vbridgebot"
-	channel="clickhouse.tw"
+	channel="-1001853496581"
