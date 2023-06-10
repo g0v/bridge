@@ -46,13 +46,6 @@
 	PreserveThreading=true
 	AutoWebhooks=true
 
-	[discord.opensantnucsie]
-	Token="[% DISCORD_OPENSANTNUCSIE_TOKEN %]"
-	Server="1100463831085498509"
-	RemoteNickFormat="[{BRIDGE}] @{NICK}"
-	PreserveThreading=true
-	AutoWebhooks=true
-
 [telegram]
 	[telegram.g0vbridgebot]
 	Token="[% TELEGRAM_G0V_BRIDGE_BOT_TOKEN %]"
@@ -162,18 +155,6 @@
 	account="discord.unicourse"
 	channel="edu-open-coscup-2023"
 
-
-[[gateway]]
-	name="edu-open-stu-association"
-	enable=true
-
-	[[gateway.inout]]
-	account="slack.g0v-tw"
-	channel="edu-open-stu-association"
-
-	[[gateway.inout]]
-	account="discord.opensantnucsie"
-	channel="edu-open-stu-association"
 
 [[gateway]]
 	name="clickhouse"
