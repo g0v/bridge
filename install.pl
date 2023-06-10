@@ -5,17 +5,19 @@ use utf8;
 use open IO => ":locale";
 use strict;
 use warnings;
+use Getopt::Std;
+
+my %opts;
+getopts('f', \%opts);
 
 my $MB_VERSION = "1.22.0";
-my $MB_BIN = "matterbridge-${MB_VERSION}-linux-64bit";
-my $MB_URL = "https://github.com/42wim/matterbridge/releases/download/v{$MB_VERSION}/${MB_BIN}";
+my $MB_BIN = "matterbridge";
+my $MB_URL = "https://github.com/42wim/matterbridge/releases/download/v{$MB_VERSION}/matterbridge-${MB_VERSION}-linux-64bit";
 
 my $template_path = "matterbridge.toml.template";
 
-system "curl -L -o ${MB_BIN} ${MB_URL}";
+system "curl -L -o ${MB_BIN} ${MB_URL}" if $opts{f} or not -x $MB_BIN;
 chmod 0755, ${MB_BIN};
-unlink "matterbridge";
-symlink ${MB_BIN}, "matterbridge";
 
 sub load_dotenv {
     open my $dotenv, ".env" or die "Cannot read .env: $!\n";
