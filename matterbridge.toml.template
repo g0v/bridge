@@ -1,55 +1,55 @@
 [slack]
 	[slack.g0v-tw]
 	Token="[% SLACK_G0V_TW_TOKEN %]"
-	RemoteNickFormat="[{BRIDGE}] @{NICK}"
+	RemoteNickFormat="{NICK}@{BRIDGE}"
 	PreserveThreading=true
 
 	[slack.daodaoedu]
 	Token="[% SLACK_DAODAOEDU_TOKEN %]"
-	RemoteNickFormat="[{BRIDGE}] @{NICK}"
+	RemoteNickFormat="{NICK}@{BRIDGE}"
 
 	[slack.code-for-korea]
 	Token="[% SLACK_CODE_FOR_KOREA_TOKEN %]"
-	RemoteNickFormat="[{BRIDGE}] @{NICK}"
+	RemoteNickFormat="{NICK}@{BRIDGE}"
 
 	[slack.code-for-japan]
 	Token="[% SLACK_CODE_FOR_JAPAN_TOKEN %]"
-	RemoteNickFormat="[{BRIDGE}] @{NICK}"
+	RemoteNickFormat="{NICK}@{BRIDGE}"
 
 [mattermost]
 	[mattermost.g0v-xyz]
 	Server="chat.g0v.xyz:443"
 	Team="everyone"
 	Token="[% MATTERMOST_G0V_XYZ_TOKEN %]"
-	RemoteNickFormat="[{BRIDGE}] @{NICK}"
+	RemoteNickFormat="{NICK}@{BRIDGE}"
 	PrefixMessagesWithNick=true
 
 [discord]
 	[discord.cofacts]
 	Token="[% DISCORD_COFACTS_TOKEN %]"
 	Server="1060178086714421288"
-	RemoteNickFormat="[{BRIDGE}] @{NICK}"
+	RemoteNickFormat="{NICK}@{BRIDGE}"
 	PreserveThreading=true
 	AutoWebhooks=true
 
 	[discord.sch001]
 	Token="[% DISCORD_SCH001_TOKEN %]"
 	Server="1075749153512108102"
-	RemoteNickFormat="[{BRIDGE}] @{NICK}"
+	RemoteNickFormat="{NICK}@{BRIDGE}"
 	PreserveThreading=true
 	AutoWebhooks=true
 
 	[discord.unicourse]
 	Token="[% DISCORD_UNICOURSE_TOKEN %]"
 	Server="931555417841078312"
-	RemoteNickFormat="[{BRIDGE}] @{NICK}"
+	RemoteNickFormat="{NICK}@{BRIDGE}"
 	PreserveThreading=true
 	AutoWebhooks=true
 
 [telegram]
 	[telegram.g0vbridgebot]
 	Token="[% TELEGRAM_G0V_BRIDGE_BOT_TOKEN %]"
-	RemoteNickFormat="<{NICK}> "
+	RemoteNickFormat="{NICK}@{BRIDGE}"
 	MessageFormat="HTMLNick :"
 	QuoteFormat="{MESSAGE} (re @{QUOTENICK}: {QUOTEMESSAGE})"
 	QuoteLengthLimit=46
