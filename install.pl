@@ -12,7 +12,7 @@ my $MB_URL = "https://github.com/42wim/matterbridge/releases/download/v{$MB_VERS
 
 my $template_path = "matterbridge.toml.template";
 
-system "curl -L -C - -o ${MB_BIN} ${MB_URL}";
+system "curl -L -o ${MB_BIN} ${MB_URL}";
 chmod 0755, ${MB_BIN};
 unlink "matterbridge";
 symlink ${MB_BIN}, "matterbridge";
