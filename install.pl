@@ -10,7 +10,7 @@ use Getopt::Std;
 my %opts;
 getopts('f', \%opts);
 
-my $MB_VERSION = "1.22.0";
+my $MB_VERSION = "1.26.0";
 my $MB_BIN = "matterbridge";
 my $MB_URL = "https://github.com/42wim/matterbridge/releases/download/v{$MB_VERSION}/matterbridge-${MB_VERSION}-linux-64bit";
 
