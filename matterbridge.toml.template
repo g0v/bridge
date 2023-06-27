@@ -16,6 +16,10 @@
 	Token="[% SLACK_CODE_FOR_JAPAN_TOKEN %]"
 	RemoteNickFormat="{NICK}@{BRIDGE}"
 
+	[slack.parti]
+	Token="[% SLACK_PARTI_TOKEN %]"
+	RemoteNickFormat="{NICK}@{BRIDGE}"
+
 [mattermost]
 	[mattermost.g0v-xyz]
 	Server="chat.g0v.xyz:443"
@@ -167,3 +171,15 @@
 	[[gateway.inout]]
 	account="telegram.g0vbridgebot"
 	channel="-1001853496581"
+
+[[gateway]]
+	name="disinformation"
+	enable=true
+
+	[[gateway.inout]]
+	account="slack.g0v-tw"
+	channel="disinfo"
+
+	[[gateway.inout]]
+	account="slack.parti"
+	channel="proj-disinformation-en"
