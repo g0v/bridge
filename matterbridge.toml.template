@@ -189,5 +189,9 @@
 	channel="disinfo"
 
 	[[gateway.inout]]
-	account="slack.parti"
+	account="slack.code-for-japan"
 	channel="proj-disinformation-en"
+
+	[[gateway.inout]]
+	account="slack.parti"
+	channel="fact-checking-project"
