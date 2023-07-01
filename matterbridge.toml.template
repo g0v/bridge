@@ -20,6 +20,10 @@
 	Token="[% SLACK_PARTI_TOKEN %]"
 	RemoteNickFormat="{NICK}@{BRIDGE}"
 
+	[slack.test]
+	Token="[% SLACK_TEST_TOKEN %]"
+	RemoteNickFormat="{NICK}@{BRIDGE}"
+
 [mattermost]
 	[mattermost.g0v-xyz]
 	Server="chat.g0v.xyz:443"
@@ -97,6 +101,10 @@
 
 	[[gateway.inout]]
 	account="slack.g0v-tw"
+	channel="bridge"
+
+	[[gateway.inout]]
+	account="slack.test"
 	channel="bridge"
 
 [[gateway]]
