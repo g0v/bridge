@@ -54,6 +54,13 @@
 	PreserveThreading=true
 	AutoWebhooks=true
 
+	[discord.daodaoedu]
+	Token="[% DISCORD_DAODAOEDU_TOKEN %]"
+	Server="1096980315098071040"
+	RemoteNickFormat="{NICK}@{BRIDGE}"
+	PreserveThreading=true
+	AutoWebhooks=true
+
 [telegram]
 	[telegram.g0vbridgebot]
 	Token="[% TELEGRAM_G0V_BRIDGE_BOT_TOKEN %]"
@@ -130,6 +137,10 @@
 	[[gateway.inout]]
 	account="slack.daodaoedu"
 	channel="主頻道-大會報告島"
+
+	[[gateway.inout]]
+	account="discord.daodaoedu"
+	channel="大廳"
 
 [[gateway]]
 	name="sch001"
