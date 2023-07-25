@@ -54,12 +54,28 @@
 	PreserveThreading=true
 	AutoWebhooks=true
 
+	[discord.daodaoedu]
+	Token="[% DISCORD_DAODAOEDU_TOKEN %]"
+	Server="1096980315098071040"
+	RemoteNickFormat="{NICK}@{BRIDGE}"
+	PreserveThreading=true
+	AutoWebhooks=true
+
 	[discord.studentdao]
 	Token="[% DISCORD_STUDENTDAO_TOKEN %]"
 	Server="1105789149560197120"
 	RemoteNickFormat="{NICK}@{BRIDGE}"
 	PreserveThreading=true
 	AutoWebhooks=true
+
+[telegram]
+	[telegram.g0vbridgebot]
+	Token="[% TELEGRAM_G0V_BRIDGE_BOT_TOKEN %]"
+	RemoteNickFormat="{NICK}@{BRIDGE}"
+	MessageFormat="HTMLNick :"
+	QuoteFormat="{MESSAGE} (re @{QUOTENICK}: {QUOTEMESSAGE})"
+	QuoteLengthLimit=46
+	IgnoreMessages="^/"
 
 [[gateway]]
 	name="herstory"
@@ -169,13 +185,34 @@
 	account="discord.unicourse"
 	channel="edu-open-coscup-2023"
 
+
 [[gateway]]
-	name="edu-open-stu-association"
+	name="clickhouse"
 	enable=true
 
 	[[gateway.inout]]
 	account="slack.g0v-tw"
-	channel="edu-open-stu-association"
+	channel="clickhouse"
+
+	[[gateway.inout]]
+	account="telegram.g0vbridgebot"
+	channel="-1001853496581"
+
+[[gateway]]
+	name="disinformation"
+	enable=true
+
+	[[gateway.inout]]
+	account="slack.g0v-tw"
+	channel="disinfo"
+
+	[[gateway.inout]]
+	account="slack.code-for-japan"
+	channel="proj-disinformation-en"
+
+	[[gateway.inout]]
+	account="slack.parti"
+	channel="fact-checking-project"
 
 	[[gateway.inout]]
 	account="discord.studentdao"
