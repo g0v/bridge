@@ -214,6 +214,14 @@
 	account="slack.parti"
 	channel="fact-checking-project"
 
+[[gateway]]
+	name="edu-open-stu-association"
+	enable=true
+
+	[[gateway.inout]]
+	account="slack.g0v-tw"
+	channel="edu-open-stu-association"
+
 	[[gateway.inout]]
 	account="discord.studentdao"
-	channel="edu-open-stu-association"
+	channel="open-discuss"
