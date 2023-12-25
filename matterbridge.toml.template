@@ -24,6 +24,11 @@
 	Token="[% SLACK_TEST_TOKEN %]"
 	RemoteNickFormat="{NICK}@{BRIDGE}"
 
+	[slack.mygopen]
+	Token="[% SLACK_MYGOPEN_TOKEN %]"
+	RemoteNickFormat="{NICK}@{BRIDGE}"
+	PreserveThreading=true
+
 [mattermost]
 	[mattermost.g0v-xyz]
 	Server="chat.g0v.xyz:443"
@@ -132,6 +137,10 @@
 	[[gateway.inout]]
 	account="discord.cofacts"
 	channel="general"
+
+	[[gateway.inout]]
+	account="slack.mygopen"
+	channel="mgpcofacts"
 
 [[gateway]]
 	name="daodaoedu"
