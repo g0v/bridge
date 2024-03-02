@@ -234,3 +234,15 @@
 	[[gateway.inout]]
 	account="discord.studentdao"
 	channel="open-discuss"
+
+[[gateway]]
+	name="open-student-org"
+	enable=true
+
+	[[gateway.inout]]
+	account="slack.g0v-tw"
+	channel="open-student-org"
+
+	[[gateway.inout]]
+	account="telegram.g0vbridgebot"
+	channel="-1001860116404"
